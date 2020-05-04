@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/pokemon")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PokemonController {
     @Autowired
     private PokemonRepository pokemonRepository;
